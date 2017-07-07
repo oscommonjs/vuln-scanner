@@ -63,10 +63,10 @@ CREATE TABLE IF NOT EXISTS `fpd` (
 
 INSERT INTO `fpd` (`id`, `url`, `payload`, `vuln`) VALUES
 (1, 'http://workstation/sandbox/xss.php?nome=', 'Array nulo', 1),
-(8, 'http://www.sinapsa.pt/noticias.php?cat=1', 'Array nulo', 0),
-(9, 'http://www.sinapsa.pt/noticias.php?cat=1', 'Sess&atilde;o nula', 1),
-(10, 'http://www.sinapsa.pt/noticias.php?cat=1', 'Sess&atilde;o inv&aacute;lida', 1),
-(11, 'http://www.sinapsa.pt/noticias.php?cat=1', 'Sess&atilde;o inv&aacute;lida (129 bytes)', 1);
+(8, 'http://', 'Array nulo', 0),
+(9, 'http://', 'Sess&atilde;o nula', 1),
+(10, 'http://', 'Sess&atilde;o inv&aacute;lida', 1),
+(11, 'http://', 'Sess&atilde;o inv&aacute;lida (129 bytes)', 1);
 
 -- --------------------------------------------------------
 
